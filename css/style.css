@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Marmelad&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+section{
+   font-family: 'Marmelad', sans-serif;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows:  160px 50px 500px 300px 380px  70px;
+   grid-template-areas: 
+   "header  header header"
+   "navbar  navbar navbar"
+   "slider slider notice"
+   " main   main  notice"
+   "card1   card2  card3"
+   "footer footer  footer";
+}
+.header{
+     border: 2px solid  rgb(226, 226, 226); 
+    grid-area: header;
+    background: url(images/aec...jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+nav{
+    border: 2px solid  rgb(220, 223, 220);
+    grid-area: navbar;
+   text-transform: uppercase;
+   background: rgb(8, 100, 136);
+         
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+  
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+ a:hover{
+   color: black;
+   font-size: 1rem;
+   background: rgb(252, 252, 252);
+   padding: 5px;
+   font-weight: 600;
+    
+} 
+
+ .slider{
+    border: 2px solid  rgb(178, 189, 178);
+    grid-area: slider;
+    background: url(images/Webp.net-gifmaker.gif)  no-repeat;
+    background-size: 100% 100%;
+}
+.notice{
+    border: 2px solid  rgb(233, 243, 233);
+    grid-area: notice;
+    cursor: pointer;
+   background-color:  rgb(27, 165, 219);
+}
+.notice h1 {
+  background-color: rgb(22, 118, 145);
+  color: white;
+  margin: 5px;
+  padding: 5px 0;
+}
+.notice marquee{
+   text-align: left;
+   padding: 30px;
+   background-color: rgb(221, 214, 214);
+
+}
+.notice marquee strong{
+    background: rgb(22, 118, 145) ;
+    padding: 5px;
+}
+
+main{
+    border: 2px solid  rgb(233, 245, 233);
+    grid-area: main;
+    margin: 19px 20px 10px 20px;
+    border: none;
+    
+       
+}
+p{
+    padding: 15px;
+    background-color:rgb(221, 214, 214) ;
+}
+h1{
+    background: rgb(22, 118, 145);
+    padding: 10px;
+}
+main a{
+    float: right;
+    text-decoration: none;
+    background:  rgb(22, 118, 145);
+    color:black
+    
+}
+ .card1{
+    border: 2px solid  rgb(246, 248, 246);
+    grid-area: card1;
+    padding-top: 10px;
+}
+.card1 img{
+    height: 300px;
+    width: 490px;
+    border:1px solid rgb(22, 118, 145) ;
+}
+.card2{
+    border: 1px solid  rgb(244, 248, 244);
+    grid-area: card2;
+    padding-top: 10px;
+}
+.card2 img{
+    height: 300px;
+    width: 490px;
+    border:1px solid rgb(22, 118, 145)
+}
+.card3{
+    border: 1px solid  rgb(255, 255, 255);
+    grid-area: card3;
+    padding-top: 10px;
+}
+.card3 img{
+    height: 300px;
+    width: 490px;
+    border:1px solid rgb(22, 118, 145)
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ .footer{
+    border: 2px solid  rgb(246, 248, 246);
+    grid-area: footer;
+    background: rgb(39, 122, 143);
+    text-align: center;
+    padding: 20px;
+    
+}
+.card1 a:hover{
+    background:  rgb(41, 91, 105);
+    padding: 10px 90px;    
+}
+.card2 a:hover{
+    background:  rgb(41, 91, 105);
+     padding: 10px 90px;
+}  
+.card3 a:hover{
+    background:  rgb(41, 91, 105);
+     padding: 10px 90px;
+}
